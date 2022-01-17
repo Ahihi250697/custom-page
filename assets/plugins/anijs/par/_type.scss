@@ -1,0 +1,28 @@
+/**
+ * <div .type>
+ *      <h2 .target>
+ *          text here
+ *      </h2>
+ * </div>
+ */
+.type {
+    .target {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        transition: width;
+        transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    &.center {
+        position: relative;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    &.animated {
+        .target {
+            width: 100%;
+        }
+    }
+}

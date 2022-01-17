@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+.ani {
+    display: inline-block;
+    // transition: transform 0.3s ease, opacity 0.3s linear;
+    //transition: transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 0.3s linear;
+    // transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    // -webkit-transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    // transition-duration: 0.4s;
+    // -webkit-transition-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+    &.ani1s {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+    }
+
+    &.ani2s {
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+    }
+
+    &.ani5s {
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+    }
+}
+
+@import './par/fade';
+@import './par/zoom';
+@import './par/wave';
+@import './par/type';
+@import './par/linebar';
+@import './par/bracket';

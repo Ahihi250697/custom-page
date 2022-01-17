@@ -148,7 +148,7 @@ a {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -243,8 +243,8 @@ html {
 }
 
 body {
-    background: #fff;
-    color: #333;
+    background-color: #fff;
+    color: #000;
     word-wrap: break-word;
     font-size: 1.6rem;
 }
@@ -385,6 +385,12 @@ button {
     vertical-align: middle;
 }
 
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
 textarea {
     overflow: auto;
     vertical-align: top;
@@ -402,4 +408,9 @@ label {
 legend {
     color: #333;
     *margin-left: -7px;
+}
+
+.f-symbol {
+    display: inline-block;
+    max-width: 10px;
 }

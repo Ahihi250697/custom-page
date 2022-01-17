@@ -1,0 +1,44 @@
+.zoom-in,
+.zoom-out {
+    opacity: 0;
+}
+
+.zoom-in {
+
+    &.animated {
+        animation-name: kf_zoom_in;
+        -webkit-animation-name: kf_zoom_in;
+    }
+}
+
+@keyframes kf_zoom_in {
+    0% {
+        opacity: 0;
+        transform: scale3d(1.4, 1.4, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.zoom-out {
+
+    &.animated {
+        animation-name: kf_zoom_out;
+        -webkit-animation-name: kf_zoom_out;
+    }
+}
+
+@keyframes kf_zoom_out {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.6, 0.6, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
